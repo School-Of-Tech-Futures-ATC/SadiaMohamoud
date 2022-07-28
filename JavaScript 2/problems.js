@@ -40,9 +40,9 @@ window.answers = () => {
 
     let sum = 0
     // For loop goes here:
-    for (i=0; 1<100; i++) {
-        console.log(sum = sum + i)
-    }
+    // for (i=0; 1<100; i++) {
+    //     console.log(sum = sum + i)
+    // }
 
     // #7 This for loop prints a 3x3 square of #s. Use a nested for-loop to make it print a square of numbers instead (123, 456, 789)
     // for (let i=0; i<3; i++) {
@@ -151,9 +151,9 @@ window.answers = () => {
 
     // #14 Write a function called largestCommonFactor that takes two number
     // and returns the largest common factor of those numbers
-    function largestCommonFactor () {
-
-    }
+    
+    //function largestCommonFactor () {
+    //}
     //let lcf2;
 
     // function largestCommonFactor (num1, num2) {
