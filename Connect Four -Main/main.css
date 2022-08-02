@@ -1,0 +1,17 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(7, 80px);
+    grid-template-rows: repeat(6, 80px);
+    width: 610px;
+    height: 500px;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: blue;
+}
+
+.cell{
+    border: 5px solid blue;
+    background-color: white;
+    border-radius: 50%;
+    outline: 0px solid blue;
+}

@@ -10,15 +10,16 @@ window.answers = () => {
     } else if (hour < 19) {
         greeting = "Good afternoon"
     } else { 
-        greeting = "Good evening"}
+        greeting = "Good evening"
+    }
 
     // #2 This code sets output to true if input is not zero
     // Change the condition so that output will equal true only if input is an even number greater than 20 or an odd number less than 10
-    // let output = false
-    // if (input > 20 && input % 2 == 0 
-    //     || input < 10 && input % 2 != 0) {
-    //     output = true
-    // }
+    let output = false
+    if (input > 20 && input % 2 == 0 
+         || input < 10 && input % 2 != 0) {
+         output = true
+     }
 
 
     // #3 Use a ternary operator (x = cond ? a : b) so that if there is exactly 1 rabbit, this line instead results in "There is 1 rabbit"
@@ -112,8 +113,8 @@ window.answers = () => {
     // #12 Write a function called 'exclaim' that takes a single string and logs it with an exclamation mark after it
     // For example, exclaim("hello") should log "hello!" to the console
     
-    //const exclaim = (s) => s + "!";
-    //console.log ("Hello", exclaim);
+    const exclaim = (s) => s + "!";
+    console.log ("Hello", exclaim);
 
 
     // #13 We would like "A", "B", "C", "D", "E" to be printed in the correct order.
