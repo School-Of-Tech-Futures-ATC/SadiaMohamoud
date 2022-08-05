@@ -34,11 +34,6 @@ function takeTurn(row, column) {
 }}
 gameOver = true;
 
-
-
-
-
-
 // Return either "noughts", "crosses" or "nobody" if the game is over.
 // Otherwise return null to continue playing.
 function checkWinner() {
@@ -59,16 +54,12 @@ function resetGame() {
     }
     
 
-
 // Return the current board state with either a "nought" or a "cross" in
 // each position. Put a null in a position that hasn't been played yet.
 function getBoard() {
     console.log("getBoard was called");
     return board;
 }
-
-
-
 
 if (typeof exports === 'object') {
     console.log("Running in Node")
@@ -83,3 +74,5 @@ if (typeof exports === 'object') {
 } else {
     console.log("Running in Browser")
 }
+
+

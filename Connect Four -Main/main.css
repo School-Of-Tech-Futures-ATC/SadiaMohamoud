@@ -1,9 +1,9 @@
 .grid{
     display: grid;
-    grid-template-columns: repeat(7, 80px);
-    grid-template-rows: repeat(6, 80px);
-    width: 610px;
-    height: 500px;
+    grid-template-columns: repeat(7, 70px);
+    grid-template-rows: repeat(6, 70px);
+    width: 520px;
+    height: 420px;
     margin: 0 auto;
     justify-content: center;
     background-color: blue;
@@ -12,6 +12,32 @@
 .cell{
     border: 5px solid blue;
     background-color: white;
-    border-radius: 50%;
+    border-radius: 70%;
     outline: 0px solid blue;
 }
+
+.marker {
+    width: 80px;
+    height: 80px;
+}
+
+#winner-display {
+    display: none;
+    background-color: white;
+    color: black;
+}
+
+body {
+    text-align: center;
+    background-color: white;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+#reset-button{
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+}
+

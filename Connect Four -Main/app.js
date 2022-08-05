@@ -24,8 +24,7 @@ let board = [
     [null, null, null, null, null, null, null]
 ]
 
-
-// let gameOver = false;
+let turn = 0
 
 // function takeTurn(row, column) {
 //     console.log("someone has drawn", row, column)

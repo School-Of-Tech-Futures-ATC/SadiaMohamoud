@@ -1,66 +1,128 @@
 <!DOCTYPE html>
+<html>
 <head>
+    <meta charset="UTF-8">
     <title>Connect 4</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>"
     <script src="./app.js"></script>
-    <link href="main.css" rel="stylesheet" type="text/css">
+    <script src="./classes/game.js"></script>
+    <link href="main.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <h1>Noughts & Crosses</h1>
+    <h1>Connect 4</h1>
     <p id="winner-display">The winner is <span id="winner-name"></span></p>
-    <div class="grid">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-    
+    <div id="grid">
+        <div class="row"
+             id="row-0">
+          <div class="column"
+               id="row-0-column-0"></div>
+          <div class="column"
+               id="row-0-column-1"></div>
+          <div class="column"
+               id="row-0-column-2"></div>
+          <div class="column"
+               id="row-0-column-3"></div>
+          <div class="column"
+               id="row-0-column-4"></div>
+          <div class="column"
+               id="row-0-column-5"></div>
+          <div class="column"
+               id="row-0-column-6"></div>
+        </div>
+        <div class="row"
+            id="row-1">
+        <div class="column"
+            id="row-1-column-0"></div>
+        <div class="column"
+            id="row-1-column-1"></div>
+        <div class="column"
+            id="row-1-column-2"></div>
+        <div class="column"
+            id="row-0-column-3"></div>
+        <div class="column"
+            id="row-0-column-4"></div>
+        <div class="column"
+            id="row-0-column-5"></div>
+        <div class="column"
+            id="row-0-column-6"></div>     
+        </div>
+        <div class="row"
+            id="row-2">
+        <div class="column"
+            id="row-2-column-0"></div>
+        <div class="column"
+            id="row-2-column-1"></div>
+        <div class="column"
+            id="row-2-column-2"></div>
+        <div class="column"
+            id="row-0-column-3"></div>
+        <div class="column"
+            id="row-0-column-4"></div>
+        <div class="column"
+            id="row-0-column-5"></div>
+        <div class="column"
+            id="row-0-column-6"></div>     
+        </div>
 
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
+        <div class="row"
+        id="row-0">
+        <div class="column"
+          id="row-0-column-0"></div>
+        <div class="column"
+          id="row-0-column-1"></div>
+        <div class="column"
+          id="row-0-column-2"></div>
+        <div class="column"
+          id="row-0-column-3"></div>
+        <div class="column"
+          id="row-0-column-4"></div>
+        <div class="column"
+          id="row-0-column-5"></div>
+        <div class="column"
+          id="row-0-column-6"></div>
+        </div>
 
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
+        <div class="row"
+        id="row-0">
+        <div class="column"
+          id="row-0-column-0"></div>
+        <div class="column"
+          id="row-0-column-1"></div>
+        <div class="column"
+          id="row-0-column-2"></div>
+        <div class="column"
+          id="row-0-column-3"></div>
+        <div class="column"
+          id="row-0-column-4"></div>
+        <div class="column"
+            id="row-0-column-5"></div>
+        <div class="column"
+          id="row-0-column-6"></div>
+   </div>
 
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
+   <div class="row"
+        id="row-0">
+    <div class="column"
+        id="row-0-column-0"></div>
+    <div class="column"
+        id="row-0-column-1"></div>
+    <div class="column"
+        id="row-0-column-2"></div>
+    <div class="column"
+        id="row-0-column-3"></div>
+    <div class="column"
+        id="row-0-column-4"></div>
+    <div class="column"
+        id="row-0-column-5"></div>
+    <div class="column"
+        id="row-0-column-6"></div>
+</div>
 
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
     </div>
     <button id="reset-button">Reset</button>
-
+    <script src="app.js"
+        type="text/javascript"></script>
+    <script src="game.js"
+        type="text/javascript"></script>
 </body>
-
+</html>
 
