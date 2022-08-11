@@ -60,19 +60,19 @@ function positionClick(rowIndex, columnIndex, event) {
 }
 
 // the winner message 
-function testWin(winner){
-    console.log(winner)
-    if (winner) {
-        if (typeof winner !== "string" || !["red", "yellow", "nobody"].includes(winner)) { // if winner is not a string or the word "yellow", "red" or "nobody", then throw this error. if it is then declare winner name
-        throw "Expecting 'checkWinner' to return null or one of the string 'red', 'yellow' or 'nobody'. Actually recieved: " + winner;
-    }
-    const winnerName = document.getElementById("winner-name");
+// function testWin(winner){
+//     console.log(winner)
+//     if (winner) {
+//         if (typeof winner !== "string" || !["red", "yellow", "nobody"].includes(winner)) { // if winner is not a string or the word "yellow", "red" or "nobody", then throw this error. if it is then declare winner name
+//         throw "Expecting 'checkWinner' to return null or one of the string 'red', 'yellow' or 'nobody'. Actually recieved: " + winner;
+//     }
+//     const winnerName = document.getElementById("winner-name");
 
-    winnerName.innerText = winner;
-    const winnerDisplay = document.getElementById("winner-display");
-    winnerDisplay.style.display = "block";
-    }
-}
+//     winnerName.innerText = winner;
+//     const winnerDisplay = document.getElementById("winner-display");
+//     winnerDisplay.style.display = "block";
+//     }
+// }
 
 // The reset button was clicked, call the game's reset function then reset the DOM.
 function resetClick(event) {

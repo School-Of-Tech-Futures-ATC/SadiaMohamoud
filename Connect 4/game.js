@@ -35,8 +35,8 @@ let player1 = "red"
 let player2 = "yellow"
 let whosdraw= player1;
 let gameOver = false;
-let turn = 0;
 
+let turnCounter = 0;
 let board = [
     [null, null, null, null, null, null, null], 
     [null, null, null, null, null, null, null], 
@@ -46,9 +46,15 @@ let board = [
     [null, null, null, null, null, null, null]
 ]
 
+let highestScore = 42;
+
+//create varibale called maxTurn =42 and create if statement
+
+
+
 function takeTurn(rows, columns) {
     console.log("someone has drawn", rows, columns)
-    if(gameOver == false){
+    if (turnCounter < 42 && gameOver === false){
         if(board[rows][columns]){
         } else {
             // if (checkLow(columns) == rows){
@@ -63,15 +69,22 @@ function takeTurn(rows, columns) {
                     whosdraw = player2;
                 } else {
                     whosdraw = player1;
-                    console.log("whosdraw", whosdraw)
-                    console.log("the board", board)}
-                }
+                    
+                } 
+                turnCounter ++
+                console.log("whosdraw", whosdraw)
+                console.log("the board", board)}
+            } else {
+                console.log("Game over, no more turns can be taken")
+
+        
             }
         }
 
 
 function checkWinner() {
     console.log("checkWinner was called");
+    if(turnCounter < 42){
 
     //check down
     for (i = 0; i < 6; i++) {
@@ -100,7 +113,7 @@ function checkWinner() {
                 }
         }
     }
-    // Check down-right
+    //Check down-right
     for (i = 0; i < 3; i++){
         for (j = 0; j < 4; j++){
             if (board[i][j] &&
@@ -126,7 +139,11 @@ function checkWinner() {
                     return board[i][j]
                 }
             }
-    } return null;
+    } } 
+    else {
+        gameOver = true;
+        return "nobody";
+    }
 }
 
 function resetGame() {
@@ -139,11 +156,12 @@ function resetGame() {
         [null, null, null, null, null, null, null]
     ]
     whosdraw = player1;
-    turn = 0;
+    turnCounter = 0; 
     gameOver = false;
     console.log("resetGame was called");
     }
     
+
 // Return the current board state with either a "red" or a "yellow" in
 // each position. Put a null in a position that hasn't been played yet.
 function getBoard() {
