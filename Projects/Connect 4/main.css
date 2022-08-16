@@ -1,0 +1,41 @@
+
+.column {
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+    border: 4px blue solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+}
+
+.row {
+    width: 1000px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.marker {
+    width: 30px;
+    height: 30px;
+}
+
+#winner-display {
+    display: none;
+    background-color: blue;
+    color: white;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    color: black;
+}
+
+#reset-button{
+    margin-top: 10px;
+}
